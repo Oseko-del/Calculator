@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!adding a viewport>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>CALCULATOR</title>
@@ -19,7 +21,7 @@
             <button onclick="appendToDisplay('4')">4</button>
             <button onclick="appendToDisplay('5')">5</button>
             <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('*')"class="operator-btn">*</button>
+            <button onclick="appendToDisplay('X')"class="operator-btn">X</button>
             <button onclick="appendToDisplay('1')">1</button>
             <button onclick="appendToDisplay('2')">2</button>
             <button onclick="appendToDisplay('3')">3</button>
@@ -29,11 +31,15 @@
             <button onclick="calculate()">=</button>
             <button onclick="ClearDisplay()"class="operator-btn">C</button>
             <button onclick="deleteLast()">DEL</button>
+            <!adding a theme dark light>
 
 
             
 
         </div>
+        <!SHOWING HISTORY>
+        <div id="history" style="max-height:100px; overflow:auto;"></div>
+        
     </div>
     
 <script src="script.js"></script>
